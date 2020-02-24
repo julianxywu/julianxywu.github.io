@@ -7,8 +7,8 @@ body {
   position: relative;
   overflow-x: hidden;
   width: 100vw;
-  height: 400vw;
-  background-color: white;
+  height: 160vw;
+  background-color: black;
   overflow-y: scroll;
   z-index: -2;
 }
@@ -41,12 +41,22 @@ body::-webkit-scrollbar {
 #about {
   position: relative;
   top: -5vh;
-  height: 100vh;
+  height: 120vh;
   width: 100vw;
   color: white;
   /* background-size: cover; */
   background-color: #101f2b;
-  z-index: -2;
+  z-index: -1;
+}
+#projects {
+  position: relative;
+  top: -5vh;
+  height: 120vh;
+  width: 100vw;
+  color: white;
+  /* background-size: cover; */
+  background-color: #152736;
+  z-index: -1;
 }
 
 /* Let's style the wrapper in such away that,
@@ -73,8 +83,8 @@ it should always be at the center of the browser */
   and float them to left and set its border and border-radius.
  */
 .contactButtons ul li {
-  width: 75px;
-  height: 75px;
+  width: 3vw;
+  height: 3vw;
   line-height: 3vw;
   margin: .4vw .4vw;
   text-align: center;
@@ -89,21 +99,27 @@ it should always be at the center of the browser */
 to align it properly */
 .contactButtons ul li .fa {
   color: #D8E2DC;
-  margin-top: 20px;
+  margin-top: .75vw;
   transition: all 0.5s ease;
+}
+
+.contactButtons ul li .fa-2x {
+  font-size: 1.3vw;
 }
 
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*email*/
 .contactButtons ul li:hover.envelope {
-  border: .2vw solid #3b5998;
-  box-shadow: 0 0 .6vw #3b5998;
+  /* border: .2vw solid #3b5998;
+  box-shadow: 0 0 .6vw #3b5998; */
+  border: .2vw solid #cc0000;
+  box-shadow: 0 0 .6vw #cc0000;
   transition: all 0.5s ease;
 }
 .contactButtons ul li:hover .fa-envelope {
-  color: #3b5998;
-  text-shadow: 0 0 .6vw #3b5998;
+  /* color: #cc0000; */
+  /* text-shadow: 0 0 .6vw #cc0000; */
   transition: all 0.5s ease;
 }
 
@@ -203,6 +219,7 @@ to align it properly */
   transform: translate(0, 0);
 } */
 
+
 /************************************************/
 /*                 ABOUT ME                     */
 /************************************************/
@@ -216,33 +233,66 @@ to align it properly */
   font-size:3vw;
   padding-top:5vh;
   height:100vh;
+  width: 100vw;
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);
   z-index: 2;
 }
-
 .paragraph {
   word-wrap: normal;
   margin-top: -40vw;
   font-size: 1.5vw;
   font-family: 'Nunito';
-  margin-left: 30%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   color: #49E9A5;
   z-index: 2;
 }
-
 .paragraph span {
-  color: #00693E;
+  /* color: #00693E; */
+  color: white;
+}
+.responsive {
+  width: 25vw;
+  height: inherit;
+  display: inline-block;
+}
+.box1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  width: 79vw;
+  height: 17vw;
+}
+figure {
+  display: inline-block;
+  height: 18vw;
+  width: 25vw;
+  margin: .5vw;
+}
+figure figcaption {
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 1vw;
+  margin-top: -.2vw;
 }
 
-.content {
-  position: relative;
-  top: 20px;
-  width: 100%;
-  height: 2000px;
-  /* padding: 20px; */
+
+/************************************************/
+/*                PROJECTS                      */
+/************************************************/
+
+.maintenance {
+  word-wrap: normal;
+  margin-top: -30vw;
   color: red;
-  overflow-x: hidden;
+  font-size: 3vw;
+  font-family: 'Nunito';
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 2;
 }
