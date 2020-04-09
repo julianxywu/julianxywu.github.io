@@ -11,25 +11,29 @@
 <!-- BODY: Website format adapted from www.studioghibli.com.au -->
 <!-- Navigation bar adapted from www.momofuku.com -->
 <!-- Pictures taken from www.pixabay.com -->
-
 <body>
   <div class="container">
-    <div class="menu">
-      <button id="menu button" class="menuButton"><i class="fa fa-bars"></i>&nbsp; Menu</button>
-    </div>
+    <!-- Picture on top -->
     <div class="container topBackground">
       <!-- <img id="topImage" src="Images/Mouse.jpg"/> -->
     </div>
+    <!-- Title text and introduction -->
     <div class="container title">
       <div class="titleContent">
         <h1 id="titleText">The Cute Baby Animal Collection</h1>
         <p> This a place to see and admire some of the cutest baby animals on planet Earth!</p>
       </div>
     </div>
+    <!-- Navigation bar on the left side -->
     <div class="navigationBar">
       <div class="first-navBar">
         <div class="container logo">       
            <div class="logo"></div>
+        </div>
+        <!-- Menu Button on left side -->
+        <div class="menu">
+          <!-- Got the menu button from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_buttons -->
+          <button id="menu button" class="menuButton"><i class="fa fa-bars"></i>&nbsp; Menu</button>
         </div>
         <div class="container buttons">
           <ul>
@@ -52,6 +56,7 @@
         </div>
       </div>
     </div>
+    <!-- Body container with all the animal pictures -->
     <div class="container body">
       <div class="canvas">
         <div class="animalFrame">
@@ -83,34 +88,15 @@
         </div>
       </div>
     </div>
+    <!-- Footer container with text input -->
     <div class="container footer">
       <p>Love&nbsp;<strong>Cute Baby Animals</strong>&nbsp;as much as we do? Leave your email and we'll send you a personal cute baby animal picture!</p>
       <div class="text container">
-        <input type="name" class="name input" maxlength="40" placeholder="Enter your name" required>
-        <input type="email" class="email input" maxlength="100" placeholder="Enter your email" required>
-        <button type="submit" id="submit button" class="submitButton">Submit</button>
+        <input type="name" class="name input" maxlength="40" placeholder="Enter your name" required> <!-- Input for Name -->
+        <input type="email" class="email input" maxlength="100" placeholder="Enter your email" required> <!-- Input for Email -->
+        <button type="submit" id="submit button" class="submitButton">Submit</button> <!-- Submit Button -->
       </div>
     </div>
   </div>
-
-
-
 </body>
-
-
-
-    <!-- <ul>
-      <li>Pets</li>
-      <li>Wild</li>
-      <li>Insects</li>
-      <li>Nature</li>
-    </ul> -->
-
-    <!-- <ul>
-      <li>Twitter Icon</li>
-      <li>Facebook Icon</li>
-      <li>Instagram Icon</li>
-      <li>Email Icon</li>
-    </ul> -->
-
 </html>
