@@ -36,8 +36,8 @@ body {
 .titleContent {
     /* background-color: green; */
     display: flex;
-    width: 100%;
-    /* padding-left: 20%; */
+    width: 80%;
+    padding-left: 15%;
     height: inherit;
     flex-wrap: wrap;
     flex-direction: column;
@@ -74,14 +74,25 @@ p {
 }
 
 .menuButton {
+    position: fixed;
+    margin-left: 5%;
+    margin-top: 15%;
     display: flex;
     flex-direction: row;
-    height: 4vh;
+    justify-content: center;
+    height: 3vw;
     width: 5vw;
     text-align: center;
     font: 15px 'Nunito';
+    background-color: white;
     border-radius: 15px;
     border: 2px solid rgb(255, 255, 255);
+    z-index: 999;
+}
+
+.fa.fa-bars {
+    display: flex;
+    align-self: center;
 }
 
 .menuButton:hover {
@@ -97,7 +108,7 @@ p {
     bottom: 0;
     width: 15vw;
     height: 100vh;
-    z-index: 999;
+    z-index: 900;
     background-size: cover;
 }
 
@@ -204,6 +215,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding-left: 15%;
     min-height: 160vh;
     background-color: rgb(233, 186, 105);
 }
@@ -218,7 +230,7 @@ a {
     width: 100%;
     max-width: 1200px;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 2%;
 }
 
 .animalFrame {
@@ -245,6 +257,7 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding-left: 15%;
     height: 40vh;
     padding-top: 3%;
     background-color: rgb(151,99,10);
