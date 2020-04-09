@@ -2,6 +2,7 @@
 # 09 April 2019
 
 Link to webpage:
+www.julianxywu.me/
 https://dartmouth-cs52-20s.github.io/lab1-landingpage-julianxywu/
 
 I adapted Studio Ghibli's site, along with MomoFuku's navigation bar, to create a website that displays cute baby animals!
