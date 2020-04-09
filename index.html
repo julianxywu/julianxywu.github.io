@@ -12,70 +12,81 @@
 
 <body>
   <div class="container">
-    <div class="container top background">
-      Background Animal Pic Here <!-- <img src="Images/Mouse.jpg"/> -->
-      <div class="Logo">
-        Logo Here
-      </div>
+    <div class="container topBackground">
+      <!-- <img id="topImage" src="Images/Mouse.jpg"/> -->
     </div>
     <div class="container title">
-      <h1>The Cute Baby Animal Collection</h1>
-      <p> This a place to see and admire some of the cutest baby animals on planet Earth!</p>
+      <div class="titleContent">
+        <h1 id="titleText">The Cute Baby Animal Collection</h1>
+        <p> This a place to see and admire some of the cutest baby animals on planet Earth!</p>
+      </div>
     </div>
-    <div class="nav bar">
-      Nav-Bar:
-      <ul>
-        <li>Home</li>
-        <li>Animals
+    <div class="menuButton">
+      <button type="menu" id="menu button" class="menuButton">Menu</button>
+    </div>
+    <div class="navigationBar">
+      <div class="first-navBar">
+        <div class="container logo">       
+           <div class="logo"></div>
+        </div>
+        <div class="container buttons">
           <ul>
-            <li>Pets</li>
-            <li>Wild</li>
-            <li>Insects</li>
-            <li>Nature</li>
+            <li>
+              <a href="http://julianxywu.me"  class="home-button">
+              <h2>Home</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#"  class="animals-button">
+                <h2>Animals</h2>
+              </a>
+            </li>
+            <li>
+              <a href="#"  class="contact-button">
+                <h2>Contact</h2>
+              </a>
+            </li>
           </ul>
-        </li>
-        <li>Contact
-          <ul>
-            <li>Twitter Icon</li>
-            <li>Facebook Icon</li>
-            <li>Instagram Icon</li>
-            <li>Email Icon</li>
-          </ul>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
     <div class="container body">
-      Content:
-      <div class="pictures list">
-        <div class="animal frame">
-          
-          <ul><li>Animal Pic Here</li></ul> <!-- <img src="Images/Chick.jpg" title="Chick"/> -->
+      <div class="canvas">
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Chick.jpg" title="Chick"/>
         </div>
-        <div class="animal frame">
-          <ul><li>Animal Pic Here</li></ul><!-- <img src="Images/Crocodile.jpg" title="Crocodile"/> -->
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Hedgehog.jpg" title="Hedgehog"/>
         </div>
-        <div class="animal frame">
-          <ul><li>Animal Pic Here</li></ul> <!-- <img src="Images/Dog.jpg" title="Dog"/> -->
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Cat.jpg" title="Cat"/>
         </div>
-        <div class="animal frame">
-          <ul><li>Animal Pic Here</li></ul> <!-- <img src="Images/Duck.jpg" title="Duck"/> -->
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Duck.jpg" title="Duck"/>
         </div>
-        <div class="animal frame">
-          <ul><li>Animal Pic Here</li></ul>  <!-- <img src="Images/Elephant.jpg" title="Elephant"/> -->
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Dog.jpg" title="Dog"/>
         </div>
-        <div class="animal frame">
-          <ul><li>Animal Pic Here</li></ul>  <!-- <img src="Images/Fox.jpg" title="Fox"/> -->
+        <div class="animalFrame">
+           <img class="animalPicture" src="Images/Fox.jpg" title="Fox"/>
         </div>
-        <div class="animal frame">
-          <ul><li>Animal Pic Here</li></ul> <!-- <img src="Images/Hedgehog.jpg" title="Hedgehog"/> -->
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Crocodile.jpg" title="Crocodile"/>
+        </div>
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Monkey.jpg" title="Monkey"/>
+        </div>
+        <div class="animalFrame">
+          <img class="animalPicture" src="Images/Elephant.jpg" title="Elephant"/>
         </div>
       </div>
     </div>
     <div class="container footer">
-      <p>Leave a comment and tell us about your favorite picture!</p>
-      <div class="text input box">
-        <input type="comment" class="comment input" maxlength="255" placeholder="Enter your comment" required>
-        <button type="submit" id="submit button">Submit</button>
+      <p>Love&nbsp;<strong>Cute Baby Animals</strong>&nbsp;as much as we do? Leave your email and we'll send you a personal cute baby animal picture!</p>
+      <div class="text container">
+        <input type="name" class="name input" maxlength="40" placeholder="Enter your name" required>
+        <input type="email" class="email input" maxlength="100" placeholder="Enter your email" required>
+        <button type="submit" id="submit button" class="submitButton">Submit</button>
       </div>
     </div>
   </div>
@@ -84,5 +95,20 @@
 
 </body>
 
+
+
+    <!-- <ul>
+      <li>Pets</li>
+      <li>Wild</li>
+      <li>Insects</li>
+      <li>Nature</li>
+    </ul> -->
+
+    <!-- <ul>
+      <li>Twitter Icon</li>
+      <li>Facebook Icon</li>
+      <li>Instagram Icon</li>
+      <li>Email Icon</li>
+    </ul> -->
 
 </html>
