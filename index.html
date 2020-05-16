@@ -1,102 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- HEAD -->
-<head> 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>julianxywu.me</title>
-</head>
+  <!-- HEAD -->
+  <head> <link rel="stylesheet" href="style/styles.css">
+    <title>julianxywu.me</title>
+  </head>
 
-<!-- BODY: Website format adapted from www.studioghibli.com.au -->
-<!-- Navigation bar adapted from www.momofuku.com -->
-<!-- Pictures taken from www.pixabay.com -->
-<body>
-  <div class="container">
-    <!-- Picture on top -->
-    <div class="container topBackground">
-      <!-- <img id="topImage" src="Images/Mouse.jpg"/> -->
+  <!-- BODY -->
+  <body>
+    <!-- BACKGROUND ANIMATION -->
+    <!-- <div class="fullscreenBG">
+      <video autoplay muted loop class="fullscreenBG_video">
+       <source src="background_website.mp4" type="video/mp4">
+      </video>
+    </div> -->
+    <!-- BACKGROUND -->
+    <!-- <div class="background">
+      <figure>
+        <img src="Background_Rectangle.jpg">
+      </figure>
+    </div> -->
+    <!-- CONTACT BUTTONS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <div class="contactButtons">
+      <ul>
+        <li class="envelope"><a href="mailto:xiaoyi.julian.wu@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+        <li class="linkedin"><a href="https://www.linkedin.com/in/julian-wu-81b73110b/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
-    <!-- Title text and introduction -->
-    <div class="container title">
-      <div class="titleContent">
-        <h1 id="titleText">The Cute Baby Animal Collection</h1>
-        <p> This a place to see and admire some of the cutest baby animals on planet Earth!</p>
-      </div>
-    </div>
-    <!-- Navigation bar on the left side -->
-    <div class="navigationBar">
-      <div class="first-navBar">
-        <div class="container logo">       
-           <div class="logo"></div>
-        </div>
-        <!-- Menu Button on left side -->
-        <div class="menu">
-          <!-- Got the menu button from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_icon_buttons -->
-          <button id="menu button" class="menuButton"><i class="fa fa-bars"></i>&nbsp; Menu</button>
-        </div>
-        <div class="container buttons">
-          <ul>
-            <li>
-              <a href="http://julianxywu.me"  class="home-button">
-              <h2>Home</h2>
-              </a>
-            </li>
-            <li>
-              <a href="#"  class="animals-button">
-                <h2>Animals</h2>
-              </a>
-            </li>
-            <li>
-              <a href="#"  class="contact-button">
-                <h2>Contact</h2>
-              </a>
-            </li>
-          </ul>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/fadein.js"></script>
+
+    <section id="home">
+      <div class="title">
+        <div class="openingAnimation">Hello!</div>
+        <div class="openingAnimation">
+          <span>I'm Julian.</span>
         </div>
       </div>
-    </div>
-    <!-- Body container with all the animal pictures -->
-    <div class="container body">
-      <div class="canvas">
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Chick.jpg" title="Chick"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Hedgehog.jpg" title="Hedgehog"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Cat.jpg" title="Cat"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Duck.jpg" title="Duck"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Dog.jpg" title="Dog"/>
-        </div>
-        <div class="animalFrame">
-           <img class="animalPicture" src="Images/Fox.jpg" title="Fox"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Crocodile.jpg" title="Crocodile"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Monkey.jpg" title="Monkey"/>
-        </div>
-        <div class="animalFrame">
-          <img class="animalPicture" src="Images/Elephant.jpg" title="Elephant"/>
-        </div>
+      <div id="scrollMessage" class="scrollMessage">
+        Scroll down!
       </div>
-    </div>
-    <!-- Footer container with text input -->
-    <div class="container footer">
-      <p>Love&nbsp;<strong>Cute Baby Animals</strong>&nbsp;as much as we do? Leave your email and we'll send you a personal cute baby animal picture!</p>
-      <div class="text container">
-        <input type="name" class="name input" maxlength="40" placeholder="Enter your name" required> <!-- Input for Name -->
-        <input type="email" class="email input" maxlength="100" placeholder="Enter your email" required> <!-- Input for Email -->
-        <button type="submit" id="submit button" class="submitButton">Submit</button> <!-- Submit Button -->
+    </section>
+
+    <section id="about">
+      <div class="header">About Me</div>
+      <div class="paragraph" style="width:52vw;"> I am currently a sophomore at <span> Dartmouth College </span>,
+        studying Computer Science and Economics. I was born in Singapore, but grew up
+        in Rhode Island. In my free time, I like to scuba dive, play music, and travel.
+        I'm familiar with Python, Java, C, as well as a little bit of HTML and CSS.
+        At my time at Dartmouth, I have been a TA for CS1 and a Learning Fellow for CS50.
+        I'm excited to work with DALI to see how much I can grow as a computer scientist
+        and contribute to projects that have a real impact on our society! </div>
+      <div class="box1">
+        <!-- Diving picture -->
+        <figure>
+          <img src="images\diving.jpg"
+            class="responsive"
+            id="diving"
+            alt="A picture of me wearing scuba gear.">
+          <figcaption>Bintan Island, Indonesia</figcaption>
+        </figure>
+        <!-- Music picture -->
+        <figure>
+          <img src="images\music.jpg"
+            class="responsive"
+            id="music"
+            alt="A picture of me playing oboe.">
+          <figcaption>Dartmouth College Wind Ensemble</figcaption>
+        </figure>
+        <!-- Traveling picture -->
+        <figure>
+          <img src="images\traveling.jpg"
+            class="responsive"
+            id="traveling"
+            height="500"
+            alt="A picture of me on top of Mount Fuji.">
+          <figcaption>Mount Fuji, Japan</figcaption>
+        </figure>
       </div>
-    </div>
-  </div>
-</body>
+    </section>
+    <!-- <div class="content">
+      <figure>
+        <img src="pic1.JPG"
+          alt="This is a picture on top of Mount Fuji in Japan!"
+          width="400"
+          height="300"
+          title="Me on top of Mount Fuji in Japan!">
+
+        <figcaption>Me on top of Mount Fuji in Japan!</figcaption>
+      </figure> -->
+    <section id="projects">
+      <div class="header">Projects</div>
+      <div class="maintenance">Under Construction! <br> Coming Soon!</div>
+      <!-- <div class="test">A webpage.</div> -->
+    </section>
+
+
+  </body>
 </html>

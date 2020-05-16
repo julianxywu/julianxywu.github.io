@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+body {
+  /* text-align:center; */
+  position: relative;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 160vw;
+  background-color: black;
+  overflow-y: scroll;
+  z-index: -2;
+}
+
+/* Make scrollbar disappear */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* section {
+  opacity: 0.5;
+  transform: translate(0, -20px);
+  transition: all 1s;
+} */
+
+/* section.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+} */
+
+#home {
+  position: relative;
+  top: -5vh;
+  height: 105vh;
+  width: 100vw;
+  background-size: cover;
+  background-color: #152736;
+  z-index: -1;
+}
+#about {
+  position: relative;
+  top: -5vh;
+  height: 120vh;
+  width: 100vw;
+  color: white;
+  /* background-size: cover; */
+  background-color: #101f2b;
+  z-index: -1;
+}
+#projects {
+  position: relative;
+  top: -5vh;
+  height: 120vh;
+  width: 100vw;
+  color: white;
+  /* background-size: cover; */
+  background-color: #152736;
+  z-index: -1;
+}
+
+/* Let's style the wrapper in such away that,
+it should always be at the center of the browser */
+.contactButtons {
+  position: fixed;
+  top: 50px;
+  left: 10px;
+  width: 100px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  animation: appear 4s;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.contactButtons ul {
+  list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height
+  and float them to left and set its border and border-radius.
+ */
+.contactButtons ul li {
+  width: 3vw;
+  height: 3vw;
+  line-height: 3vw;
+  margin: .4vw .4vw;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: .2vw solid #D8E2DC;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px
+to align it properly */
+.contactButtons ul li .fa {
+  color: #D8E2DC;
+  margin-top: .75vw;
+  transition: all 0.5s ease;
+}
+
+.contactButtons ul li .fa-2x {
+  font-size: 1.3vw;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*email*/
+.contactButtons ul li:hover.envelope {
+  /* border: .2vw solid #3b5998;
+  box-shadow: 0 0 .6vw #3b5998; */
+  border: .2vw solid #cc0000;
+  box-shadow: 0 0 .6vw #cc0000;
+  transition: all 0.5s ease;
+}
+.contactButtons ul li:hover .fa-envelope {
+  /* color: #cc0000; */
+  /* text-shadow: 0 0 .6vw #cc0000; */
+  transition: all 0.5s ease;
+}
+
+/*linkedin*/
+.contactButtons ul li:hover.linkedin {
+  border: .2vw solid #0e76a8;
+  box-shadow: 0 0 .6vw #0e76a8;
+  transition: all 0.5s ease;
+}
+.contactButtons ul li:hover.fa-linkedin {
+  color: #0e76a8;
+  text-shadow: 0 0 .6vw #0e76a8;
+  transition: all 0.5s ease;
+}
+
+/* Center text */
+.title {
+  text-align: center;
+}
+
+/* "Hello! I'm Julian" */
+.openingAnimation {
+  display:inline-block;
+  overflow:hidden;
+  white-space:nowrap;
+  color:#49E9A5;
+  font-family:'Merriweather';
+  font-weight:300;
+  font-size:5vw;
+  padding-top:40vh;
+  height:100vh;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  z-index: 2;
+}
+.openingAnimation:first-of-type {
+  animation: showup 7s;
+  animation-fill-mode: forwards;
+}
+.openingAnimation:last-of-type {
+  width:0px;
+  animation: reveal 7s;
+  animation-fill-mode: forwards;
+}
+.openingAnimation:last-of-type span {
+  margin-left:-30vw;
+  animation: slidein 7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+@keyframes appear {
+    0% {opacity:0;}
+    95% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes disappear {
+    0% {opacity:1;}
+    95% {opacity:1;}
+    100% {opacity:0};
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    40% { margin-left: 0px; }
+    100% { margin-left: 0px; }
+}
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    40% {width:30vw;}
+    80% {opacity:1;}
+    100% {opacity:1;width:30vw;}
+}
+
+/* "Scroll down!" */
+.scrollMessage {
+  position: relative;
+  top: -25vw;
+  font-family: Merriweather;
+  font-size: 1vw;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  animation: appear 4s;
+  animation-fill-mode: forwards;
+}
+
+/* .scrollMessage.invisible {
+  opacity: 0.2;
+  transform: translate(0, 0);
+} */
+
+
+/************************************************/
+/*                 ABOUT ME                     */
+/************************************************/
+.header {
+  text-align: center;
+  overflow:hidden;
+  white-space:nowrap;
+  color: white;
+  font-family:'Nunito';
+  font-weight:100;
+  font-size:3vw;
+  padding-top:5vh;
+  height:100vh;
+  width: 100vw;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  z-index: 2;
+}
+.paragraph {
+  word-wrap: normal;
+  margin-top: -40vw;
+  font-size: 1.5vw;
+  font-family: 'Nunito';
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #49E9A5;
+  z-index: 2;
+}
+.paragraph span {
+  /* color: #00693E; */
+  color: white;
+}
+.responsive {
+  width: 25vw;
+  height: inherit;
+  display: inline-block;
+}
+.box1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  width: 79vw;
+  height: 17vw;
+}
+figure {
+  display: inline-block;
+  height: 18vw;
+  width: 25vw;
+  margin: .5vw;
+}
+figure figcaption {
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 1vw;
+  margin-top: -.2vw;
+}
+
+
+/************************************************/
+/*                PROJECTS                      */
+/************************************************/
+
+.maintenance {
+  word-wrap: normal;
+  margin-top: -30vw;
+  color: red;
+  font-size: 3vw;
+  font-family: 'Nunito';
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 2;
+}
