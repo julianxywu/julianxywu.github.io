@@ -44,7 +44,8 @@ const About = (props) => {
       <div className="aboutPicContainer">
         <Figure>
           <Figure.Image
-            src={`${process.env.PUBLIC_URL}/images/diving.jpg`}
+            // eslint-disable-next-line prefer-template
+            src={process.env.PUBLIC_URL + '/images/diving.jpg'}
             className="responsive"
             id="diving"
             alt="A picture of me wearing scuba gear."
