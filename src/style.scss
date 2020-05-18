@@ -1,17 +1,458 @@
-body, html {
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
-    height: 100%;
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+html {
+    background: linear-gradient(to left bottom, #94ddf5 0%,#3984e6 20%,#9139da 100%);
+    overflow-x: hidden;
+    // height: 100%;
+    // margin: 0px;
   }
 
-  .logo {
-    background-image: url('img/Monkey.jpg');
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
+main {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
 
-  .active {
-    color: pink;
+body {
+background-color: transparent;
+// height: 200vh;
+margin: 0px;
+width: inherit;
+overflow-y: hidden;
+overflow-x: hidden;
+// z-index: -2;
+}
+
+.active {
+  color: pink;
+}
+
+#main {
+  height: inherit;
+  width: 100%;
+  // background-color: green;
+}
+
+#coverContainer {
+  // background-color: blue ;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactBar {
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  // background-color: green;
+  width: 5%;
+  padding: 3em;
+  z-index: 50;
+}
+
+.icon {
+  font-size: 1.5em;
+  color: #D8E2DC;
+  margin-top: .75vw;
+  transition: all 0.5s ease;
+  margin: .4em .4em;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: .15em solid #D8E2DC;
+  padding: 0.5em;
+  animation: appear 4s;
+  animation-fill-mode: forwards;
+}
+
+#linkedInIcon:hover {
+  color: #0e76a8;
+  text-shadow: 0 0 .6vw #0e76a8;
+  border: .2vw solid #0e76a8;
+  box-shadow: 0 0 .6vw #0e76a8;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+
+#emailIcon:hover {
+  color: #cc0000;
+  text-shadow: 0 0 .6vw #cc0000;
+  border: .2vw solid #cc0000;
+  box-shadow: 0 0 .6vw #cc0000;
+  transition: all 0.5s ease;
+  transform: scale(1.2);
+}
+
+#iconSpacing {
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  // background-size: cover;
+  // background-color: #152736;
+  background: linear-gradient(to left bottom, #94ddf5 0%,#3984e6 20%,#9139da 100%);
+  // z-index: -1;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 120vh;
+  width: 100vw;
+  color: white;
+  background: linear-gradient(to right bottom, #94ddf5 0%,#3984e6 20%,#9139da 100%);
+  // z-index: -1;
+  padding-bottom: 10vh;
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: 120vh;
+  width: 100vw;
+  color: white;
+  background: linear-gradient(to left bottom, #94ddf5 0%,#3984e6 20%,#9139da 100%);
+  // z-index: -1;
+}
+
+/***************************/
+/*         HOME            */
+/***************************/
+
+.title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+  /* "Hello! I'm Julian" */
+.openingAnimation {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family:'Merriweather';
+  overflow:hidden;
+  white-space:nowrap;
+  color:white;
+  font-weight:300;
+  font-size:5vw;
+  z-index: 2;
+}
+.openingAnimation:first-of-type {
+  animation: showup 7s;
+  animation-fill-mode: forwards;
+}
+.openingAnimation:last-of-type {
+  width:0px;
+  animation: reveal 7s;
+  animation-fill-mode: forwards;
+}
+.openingAnimation:last-of-type span {
+  margin-left:-30vw;
+  animation: slidein 7s;
+  animation-fill-mode: forwards;
+}
+
+   /* "Scroll down!" */
+.scrollMessage {
+  position: relative;
+  top: 35vh;
+  font-family:'Merriweather';
+  font-size: 1vw;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  animation: appear 4s;
+  animation-fill-mode: forwards;
+}
+
+/* .scrollMessage.invisible {
+  opacity: 0.2;
+  transform: translate(0, 0);
+} */
+
+@keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:1;}
   }
+@keyframes appear {
+    0% {opacity:0;}
+    95% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes disappear {
+    0% {opacity:1;}
+    95% {opacity:1;}
+    100% {opacity:0};
+}
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    40% { margin-left: 0px; }
+    100% { margin-left: 0px; }
+}
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    40% {width:30vw;}
+    80% {opacity:1;}
+    100% {opacity:1;width:30vw;}
+}
+
+/***************************/
+/*         ABOUT           */
+/***************************/
+
+.header {
+    text-align: center;
+    overflow:hidden;
+    white-space:nowrap;
+    color: white;
+    font-family:'Nunito';
+    width: 100%;
+    font-weight:100;
+    font-size:3em;
+    padding-top:1.5em;
+    z-index: 2;
+    height: 10%;
+  }
+.paragraph {
+  word-wrap: normal;
+  font-size: 1.5vw;
+  font-family: 'Nunito';
+  text-align: center;
+  width: 60%;
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  padding-top: 2em;
+}
+.paragraph span {
+  // color: #00693E;
+  font-weight: bold;
+  color: rgb(109, 240, 83);
+}
+.responsive {
+  width: 25vw;
+  height: inherit;
+  display: inline-block;
+}
+.aboutPicContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  width: 100%;
+  height: 30em;
+}
+figure {
+  display: inline-block;
+  height: 18vw;
+  width: 25vw;
+  margin: .5vw;
+  pointer-events: all;
+}
+
+figure figcaption {
+  text-align: center;
+  font-family: 'Nunito';
+  font-size: 1vw;
+  margin-top: -.2vw;
+}
+
+/***************************/
+/*        PROJECTS         */
+/***************************/
+
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 5vh;
+  // margin-right: 5em;
+  width: 90%;
+  height: 30em;
+  // background-color: red;
+}
+
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  width: 25em;
+  height: 18em;
+  perspective: 1000px;
+  border-radius: 3em;
+}
+
+.projectContainerInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 1em;
+}
+
+.projectContainer:hover .projectContainerInner {
+  transform: rotateY(180deg);
+}
+
+.frontSide, .backSide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+  backface-visibility: hidden;
+}
+
+.backSide {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  // background-color: white;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.coverImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 55%;
+  height: 20%;
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
+.textContainer {
+  width: 75%;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 30%;
+  height: 20%;
+  padding-top: 2.3em;
+}
+
+.toolsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  padding-left: 1em;
+}
+
+h1 {
+  font-family: Nunito;
+  font-size: 2em;
+  margin: 0;
+  word-wrap: none;
+}
+
+h2 {
+  font-family: Nunito;
+  font-size: 1em;
+}
+
+p {
+  font-family: Merriweather;
+  font-size: 1em;
+}
+
+button {
+  background-color: transparent;
+  height: 80%;
+  width: 60%;
+  display: inline-block;
+  // box-shadow: none;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 1em;
+  border-color: white;
+}
+
+button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  font-family: Nunito;
+  font-size: 1em;
+  color: white;
+}
+
+button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -0.4em;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 2em;
+  color: white;
+}
+
+button:hover span {
+  padding-right: 25px;
+}
+
+button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.LeafIcon {
+  font-size: 2em;
+}
+
+.maintenance {
+  word-wrap: normal;
+  color: red;
+  font-size: 3vw;
+  text-align: center;
+  font-family: 'Nunito';
+  z-index: 2;
+  background-color: blue;
+  height: 30%;
+}
+
