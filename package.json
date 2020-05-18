@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "repository": "https://github.com/dartmouth-cs52-20S/starterpack-julianxywu.git",
-  "homepage": "http://julianxywu.github.io/julianxywu.me",
+  "homepage": "https://julianxywu.github.io/julianxywu.me",
   "author": "Julian Wu <julian.22@dartmouth.edu>",
   "license": "MIT",
   "scripts": {
