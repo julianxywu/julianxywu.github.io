@@ -106,7 +106,7 @@ const Projects = (props) => {
           id="coverImage"
           title="Space Shooter"
           description="A game similar to the antiquated game 'Space Invaders'"
-          tools="HTML | CSS | JS | Firebase"
+          tools="Java"
           link="https://github.com/julianxywu/Projects/tree/master/spaceInvaders"
         />
       </div>
