@@ -63,7 +63,7 @@ const About = (props) => {
         </Figure>
         <Figure>
           <Figure.Image
-            src={process.env.PUBLIC_URL + '/traveling/diving.jpg'}
+            src={process.env.PUBLIC_URL + '/images/traveling.jpg'}
             className="responsive"
             id="traveling"
             height="500"
