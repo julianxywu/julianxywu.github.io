@@ -14,6 +14,12 @@ import { faLeaf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ContactBar from './contact-bar';
 import ProjectModule from './project-module';
+import diving from '../img/diving.jpg';
+import music from '../img/music.jpg';
+import traveling from '../img/traveling.jpg';
+import blackmirror from '../img/BlackMirrorBuzzFeed.png';
+import leaflet from '../img/Leaflet.png';
+import spaceinvader from '../img/SpaceInvaders.png';
 
 const Welcome = (props) => {
   return (
@@ -45,7 +51,7 @@ const About = (props) => {
       <div className="aboutPicContainer">
         <Figure>
           <Figure.Image
-            src={process.env.PUBLIC_URL + '/images/diving.jpg'}
+            src={diving}
             className="responsive"
             id="diving"
             alt="A picture of me wearing scuba gear."
@@ -54,7 +60,7 @@ const About = (props) => {
         </Figure>
         <Figure>
           <Figure.Image
-            src={process.env.PUBLIC_URL + '/images/music.jpg'}
+            src={music}
             className="responsive"
             id="music"
             alt="A picture of me playing oboe."
@@ -63,7 +69,7 @@ const About = (props) => {
         </Figure>
         <Figure>
           <Figure.Image
-            src={process.env.PUBLIC_URL + '/images/traveling.jpg'}
+            src={traveling}
             className="responsive"
             id="traveling"
             height="500"
@@ -82,7 +88,7 @@ const Projects = (props) => {
       <div className="header">Projects</div>
       <div className="projectsContainer">
         <ProjectModule
-          iconImage={process.env.PUBLIC_URL + '/images/Leaflet.png'}
+          iconImage={leaflet}
           class="coverImage"
           id="coverImage"
           title="Leaflets"
@@ -92,7 +98,7 @@ const Projects = (props) => {
           link="http://leaflets.surge.sh/"
         />
         <ProjectModule
-          iconImage={process.env.PUBLIC_URL + '/images/BlackMirrorBuzzFeed.png'}
+          iconImage={blackmirror}
           class="coverImage"
           id="coverImage"
           title="Black Mirror"
@@ -101,7 +107,7 @@ const Projects = (props) => {
           link="https://dartmouth-cs52-20s.github.io/lab2-quizzical-julianxywu/"
         />
         <ProjectModule
-          iconImage={process.env.PUBLIC_URL + '/images/SpaceInvaders.png'}
+          iconImage={spaceinvader}
           class="coverImage"
           id="coverImage"
           title="Space Shooter"

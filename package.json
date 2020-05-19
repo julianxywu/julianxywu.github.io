@@ -2,17 +2,18 @@
   "name": "starterpack-julianxywu",
   "version": "1.0.0",
   "main": "src/index.js",
-  "repository": "https://github.com/dartmouth-cs52-20S/starterpack-julianxywu.git",
-  "homepage": "https://julianxywu.github.io/julianxywu.me",
+  "repository": "https://github.com/julianxywu/julianxywu.me",
+  "homepage": "http://julianxywu.github.io/julianxywu.me",
   "author": "Julian Wu <julian.22@dartmouth.edu>",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "SET NODE_ENV=development& webpack-dev-server",
+    "test": "eslint src/**.js",
+    "winbuild": "yarn clean & SET WEBPACK_ENV=production& webpack --colors",
+    "clean": "rimraf dist",
+    "windeploy": "yarn winbuild & surge -p dist -d julian-cs52-starter.surge.sh & yarn clean",
+    "predeploy": "yarn winbuild",
+    "deploy": "gh-pages -b master -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -22,6 +23,7 @@
     "autoprefixer": "^9.7.6",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "cname-webpack-plugin": "^2.0.1",
     "css-loader": "^3.5.2",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
@@ -40,7 +42,10 @@
     "style-loader": "^1.1.4",
     "surge": "^0.21.3",
     "svg-url-loader": "^5.0.0",
-    "url-loader": "^4.1.0"
+    "url-loader": "^4.1.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free-brands": "^5.0.13",
@@ -49,6 +54,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "axios": "^0.19.2",
+    "create-react-app": "^3.4.1",
     "gh-pages": "^2.2.0",
     "jquery": "^3.5.0",
     "lodash.debounce": "^4.0.8",

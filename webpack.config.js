@@ -6,6 +6,7 @@ const env = process.env.NODE_ENV || 'development';
 // set to 'production' or 'development' in your env
 
 const finalCSSLoader = (env === 'production') ? MiniCssExtractPlugin.loader : { loader: 'style-loader' };
+const CnameWebpackPlugin = require('cname-webpack-plugin');
 
 module.exports = {
   mode: env,
@@ -74,6 +75,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './200.html',
+    }),
+    new CnameWebpackPlugin({
+      domain: 'example.com',
     }),
   ],
 };

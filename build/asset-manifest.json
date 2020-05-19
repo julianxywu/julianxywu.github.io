@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/julianxywu.me/static/css/main.c6ca024d.chunk.css",
+    "main.js": "/julianxywu.me/static/js/main.e5eaeb75.chunk.js",
+    "main.js.map": "/julianxywu.me/static/js/main.e5eaeb75.chunk.js.map",
+    "runtime-main.js": "/julianxywu.me/static/js/runtime-main.08ea2360.js",
+    "runtime-main.js.map": "/julianxywu.me/static/js/runtime-main.08ea2360.js.map",
+    "static/js/2.d9609397.chunk.js": "/julianxywu.me/static/js/2.d9609397.chunk.js",
+    "static/js/2.d9609397.chunk.js.map": "/julianxywu.me/static/js/2.d9609397.chunk.js.map",
+    "index.html": "/julianxywu.me/index.html",
+    "precache-manifest.adbbdb5d1719bc8c42bb24aa44e17681.js": "/julianxywu.me/precache-manifest.adbbdb5d1719bc8c42bb24aa44e17681.js",
+    "service-worker.js": "/julianxywu.me/service-worker.js",
+    "static/css/main.c6ca024d.chunk.css.map": "/julianxywu.me/static/css/main.c6ca024d.chunk.css.map",
+    "static/js/2.d9609397.chunk.js.LICENSE.txt": "/julianxywu.me/static/js/2.d9609397.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08ea2360.js",
+    "static/js/2.d9609397.chunk.js",
+    "static/css/main.c6ca024d.chunk.css",
+    "static/js/main.e5eaeb75.chunk.js"
+  ]
+}
